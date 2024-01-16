@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2aeb1c8d9e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Accuil</a></li>
+                    <li><a href="#about">à propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Concepteur UI/UX</p>
+                <h1>Bonjour, <br>Je m'appelle <span>MOHAMMAD <br> HAROON YAQUBI</span></h1>
+            </div>
+        </div>
+    </div>
+    <!------about------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">A propos de moi</h1>
+                    <p class="text-align">En tant que développeur web et mobile, j'ai récemment terminé mon stage chez Simplon, où j'ai acquis des compétences essentielles dans le domaine du développement. Mon parcours professionnel antérieur m'a permis d'explorer la recherche et l'analyse de données, ainsi que la gestion d'un centre d'appels.
+                    <br> Fort d'une expérience variée, je suis maintenant prêt à poursuivre ma carrière en tant que développeur. Ma motivation inébranlable et ma passion pour le développement font de cette transition une réalisation majeure de mon parcours professionnel.
+                    <br>Je suis enthousiaste à l'idée de contribuer de manière significative à des projets innovants et de continuer à apprendre et à évoluer dans le domaine du développement web et mobile.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Compétences</p>
+                            <p class="tab-links" onclick="opentab('experience')">Expérience</p>
+                            <p class="tab-links" onclick="opentab('educattion')">Éducation</p>
+                            <p class="tab-links" onclick="opentab('Compétences-Informatiques')">Compétences Informatiques</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Développement Web</span><br>Développement web et web mobile</li>
+                                <li>
+                                    <span>Management d'une équipe</span><br>
+                                    Gestion d'équipes et coordination des activités.
+                                  </li>
+                                  <li>
+                                    <span>Contrôle qualité des interviews et nettoyage des bases de données</span><br>
+                                    Évaluation de la qualité des entretiens et nettoyage de bases de données.
+                                  </li>
+                                  <li>
+                                    <span>Gestion de la logistique, des ressources humaines</span><br>
+                                    Coordination logistique et gestion des ressources humaines.
+                                  </li>
+                                  <li>
+                                    <span>Notions de traduction (Anglais et Dari)</span><br>
+                                    Compétences de traduction en anglais et dari.
+                                  </li>
+                                  <li>
+                                    <span>Elaboration de documents (questionnaire par exemple)</span><br>
+                                    Création de documents tels que des questionnaires.
+                                  </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023 – 2023</span><br>Stage Développeur web </li>
+                                <li><span>2023 - 2023</span><br>Formation de développeur web et web mobile chez Simplon à Clermont-Ferrand.</li>
+                                <li><span>2018 - 2021</span><br>Coordinateur de recherche & Manager du Call Center</li>
+                                <li><span>2008 - 2018</span><br>Responsable de l'entrée des données</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="educattion">
+                            <ul>
+                                <li><span>2023</span><br>Titre Professionnel, Développeur Web et Web movbile - niveau 5</li>
+                                <li><span>2017</span><br>Certificat d’anglais professionnel</li>
+                                <li><span>2016</span><br>DIT(Diplôme de Technologie de l’information IT)</li>
+                                <li><span>2007</span><br> Certificat Access Project avec SQL server</li>
+                                <li><span>1998</span><br>Diplôme de fin d’étude, niveau Lycée</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Compétences-Informatiques">
+                            <ul>
+                              <li><span>HTML</span><br><i class="fa-brands fa-html5"></i></li>
+                              <li><span>CSS</span><br><i class="fa-brands fa-css3-alt"></i></i></li>
+                              <li><span>JS</span><br><i class="fa-brands fa-js"></i></li>
+                              <li><span>PHP</span><br><i class="fa-brands fa-php"></i></li>
+                              <li><span>Laravel</span><br><i class="fa-brands fa-laravel"></i></li>
+                              <li><span>React</span><br><i class="fa-brands fa-react"></i></li>
+                              <li><span>Wordpress</span><br><i class="fa-brands fa-wordpress"></i></li>
+                              <li><span>Bootstrap</span><br><i class="fa-brands fa-bootstrap"></i></li>
+                              <li><span>Github</span><br><i class="fa-brands fa-github"></i></li>
+                              <li><span>Trello</span><br><i class="fa-brands fa-trello"></i></li>
+                            </ul>
+                          </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------services------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Mes services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu augue ac ipsum tincidunt bibendum sed nec justo.</p>
+                <a href="#">En savoir plus</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu augue ac ipsum tincidunt bibendum sed nec justo.</p>
+                <a href="#">En savoir plus</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu augue ac ipsum tincidunt bibendum sed nec justo.</p>
+                <a href="#">En savoir plus</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------portfolio------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Mon travail</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Citation</h3>
+                    <p>Le projet Générateur de citations présente deux citations personnalisées créées avec JavaScript."</p>
+                    <a href="https://haroonyaqubi.github.io/Citation/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Lieux de restauration des CROUS de la MEL</h3>
+                    <p>Site web permettant d'afficher les lieux de restauration des CROUS de la Métropole Européenne de Lille.</p>
+                    <a href="https://haroonyaqubi.github.io/Lieux-de-restauration-des-CROUS-de-la-MEL/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping app</h3>
+                    <p>The App connects ........</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">En Savoir Plus</a>
+    </div>
+</div>
+<!------contact------>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Me contacter</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> Contact@example.com</p>
+                <p> <i class="fa-sharp fa-solid fa-square-phone"></i> 01234567889</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="download/my-cv.pdf" download class="btn btn2">Télécharger CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Votre nom" required>
+                    <input type="email" name="Email" placeholder="Votre Email" required>
+                    <textarea name="Message" rows="6" placeholder="Votre message"></textarea>
+                    <button type="submit" class="btn btn2">Envoyer</button>
+                </form>
+            </div>            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ Tous droits réservés</p>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");  
+        var tabcontents = document.getElementsByClassName("tab-contents");  
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";  
+        }
+        
+    </script>
+</body>
+</html>
